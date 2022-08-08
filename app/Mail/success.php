@@ -29,6 +29,6 @@ class success extends Mailable
      */
     public function build()
     {
-        return $this->view('Mail.welcome')->with('name',$this->name);
+        return $this->view('client.Mail.welcome')->with('name',$this->name);
     }
 }
