@@ -5,15 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router , Route, Routes} from 'react-router-dom';
-import Nav from './Components/Nav';
-import Login from './Components/Login';
+import Nav from './Components/Client/Nav';
+import Login from './Components/Client/Login';
 import axios from 'axios';
-import Home from './Components/Home';
-import Doctors from './Components/Doctors';
+import Home from './Components/Client/Home';
+import Doctors from './Components/Client/Doctors';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Registration from './Components/Registration';
-import SignOut from './Components/SignOut';
+import Registration from './Components/Client/Registration';
+import SignOut from './Components/Client/SignOut';
 
 
 var token=null;
