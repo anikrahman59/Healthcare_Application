@@ -8,11 +8,11 @@ const Nav=()=>{
     return(
         <div>
             <Container>
-            <Link to="/login"><Button>Login</Button></Link> &nbsp;
-            <Link to="/registration"><Button>Registration</Button></Link> &nbsp;
-            <Link to="/home"><Button>Home</Button></Link> &nbsp;
-            <a href="/doctors"><Button>Doctors</Button></a> &nbsp;
-            <Link to="/logout"><Button variant="danger">Logout</Button></Link> &nbsp;
+            <Link to="/client/login"><Button>Login</Button></Link> &nbsp;
+            <Link to="/client/registration"><Button>Registration</Button></Link> &nbsp;
+            <Link to="/client/home"><Button>Home</Button></Link> &nbsp;
+            <a href="/doctors/book"><Button>Doctors</Button></a> &nbsp;
+            <Link to="/client/logout"><Button variant="danger">Logout</Button></Link> &nbsp;
             </Container>
         </div>
         

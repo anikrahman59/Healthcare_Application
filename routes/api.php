@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\LoginAPIController;
+use App\Http\Controllers\ClientAPIController;
 
 
 /*
@@ -21,13 +21,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/client/login', [LoginAPIController::class, "login"]);
+Route::post('/client/login', [ClientAPIController::class, "clientLogin"]);
 
-Route::get('/doctors', [LoginAPIController::class, "doctorList"])->middleware('APIAuth');
+Route::get('/doctors/book', [ClientAPIController::class, "doctorListB"])->middleware('ClientAPIAuth');
 
-Route::post('/client/registration', [LoginAPIController::class, "registration"]);
+Route::post('/client/registration', [ClientAPIController::class, "clientRegistration"]);
 
-Route::post('/logout',[LoginAPIController::class,'logout']); 
+Route::post('/logout',[ClientAPIController::class,'clientLogout']); 
 
 
 

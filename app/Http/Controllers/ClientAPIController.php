@@ -14,10 +14,10 @@ use App\Mail\success;
 
 
 
-class LoginAPIController extends Controller
+class ClientAPIController extends Controller
 {
 
-    public function login(Request $req)
+    public function clientLogin(Request $req)
     {
 
        $user=Client::where('client_email',$req->client_email)->where('client_password',$req->client_password)->first();
@@ -35,13 +35,13 @@ class LoginAPIController extends Controller
         return "No user found";
     }
 
-    public function doctorList()
+    public function doctorListB()
     {
         $dc=Doctor::all();
         return $dc;
     } 
 
-    public function registration(Request $req)
+    public function clientRegistration(Request $req)
     {
          $dd = new Client();
 
@@ -60,7 +60,7 @@ class LoginAPIController extends Controller
          return $dd;
      }
 
-     public function logout(Request $request)
+     public function clientLogout(Request $request)
      {
         $token = Token::where('token',$request->token)->first();
 

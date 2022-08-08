@@ -9,7 +9,7 @@ const Doctors=()=>{
     const [doctors,setDoctors]= useState([]);
 
     useEffect(()=>{
-        axios.get("http://127.0.0.1:8000/api/doctors")
+        axios.get("http://127.0.0.1:8000/api/doctors/book")
         .then(resp=>{
            console.log(resp.data);
            setDoctors(resp.data);

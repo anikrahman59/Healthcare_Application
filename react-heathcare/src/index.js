@@ -31,11 +31,11 @@ root.render(
     <Nav/>
 
     <Routes>
-       <Route exact path='/login' element={<Login/>} />
-       <Route exact path='/home' element={<Home/>} />
-       <Route exact path='/doctors' element={<Doctors/>} /> 
-       <Route exact path='/registration' element={<Registration/>} /> 
-       <Route exact path='/logout' element={<SignOut/>} />
+       <Route exact path='/client/login' element={<Login/>} />
+       <Route exact path='/client/home' element={<Home/>} />
+       <Route exact path='/doctors/book' element={<Doctors/>} /> 
+       <Route exact path='/client/registration' element={<Registration/>} /> 
+       <Route exact path='/client/logout' element={<SignOut/>} />
 
     </Routes>
   </Router>

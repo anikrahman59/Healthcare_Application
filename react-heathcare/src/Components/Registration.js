@@ -29,11 +29,8 @@ const Registration=()=>{
             console.log(token);
             var user = {name: token.client_name, email:token.client_email};
             localStorage.setItem('user',JSON.stringify(user));
-           // document.getElementById('msg').innerHTML = token.message;
 
-            navigate('/login');
-
-
+            navigate('/client/login');
 
 
         }).catch(err=>{

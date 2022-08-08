@@ -25,11 +25,11 @@ const Login=()=>{
 
 
             if(token == "No user found"){
-                navigate('/login');
+                navigate('/client/login');
             }
             else
             {
-                navigate('/home');
+                navigate('/client/home');
             }
 
  

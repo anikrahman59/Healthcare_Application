@@ -12,7 +12,7 @@ const SignOut = () => {
     .then(resp=>{
         var data = resp.data;
         console.log(data);
-        navigate('/login');
+        navigate('/client/login');
     }).catch(err=>{
         console.log(err);
     });
