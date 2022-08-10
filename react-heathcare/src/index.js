@@ -28,9 +28,10 @@ root.render(
   <React.StrictMode>
 
   <Router>
-    <Nav/>
+    
 
     <Routes>
+       <Route exact path='/' element={<Nav/>} />
        <Route exact path='/client/login' element={<Login/>} />
        <Route exact path='/client/home' element={<Home/>} />
        <Route exact path='/doctors/book' element={<Doctors/>} /> 

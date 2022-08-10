@@ -1,11 +1,13 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import Nav2 from './Nav2';
 
 const Home=()=>{
     return(
         <div>
-            <br></br>
+            
             <Container>
+                <Nav2/> <br></br>
         <h1>Welcome Home !</h1>
         <br></br>
         <h5>

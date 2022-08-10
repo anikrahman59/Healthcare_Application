@@ -5,6 +5,8 @@ import {useNavigate} from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
+import Nav from './Nav';
+
 
 const Login=()=>{
 
@@ -44,6 +46,7 @@ const Login=()=>{
     return(
         <div>
             <Container>
+                <Nav/>
 
             <br></br>
 

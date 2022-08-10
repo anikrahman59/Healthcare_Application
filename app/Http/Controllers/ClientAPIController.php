@@ -53,11 +53,13 @@ class ClientAPIController extends Controller
          $dd->client_bg = $req->client_bg;
          $dd->client_phone = $req->client_phone;
          $dd->client_address = $req->client_address;       
-         $dd->save();    
+         $dd->save();   
+         
+         return $dd;
 
          Mail::to("$req->client_email")->send(new success("$req->client_name"));
 
-         return $dd;
+         
      }
 
      public function clientLogout(Request $request)

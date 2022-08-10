@@ -7,7 +7,7 @@ import { Button } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 
 
-const Nav=()=>{
+const Nav2=()=>{
     return(
         <div>
             {/* <Container>
@@ -45,7 +45,7 @@ const Nav=()=>{
           <Navbar.Brand className="navItem"><a href="/doctors/book" style={{ textDecoration: 'none', color:'black' }}>Doctors</a></Navbar.Brand> &nbsp;
 
           &nbsp;&nbsp;
-          {/* <Navbar.Brand className="navItem"><Link to="/client/logout"><Button variant="danger">Logout</Button></Link> </Navbar.Brand>&nbsp; */}
+          <Navbar.Brand className="navItem"><Link to="/client/logout"><Button variant="danger">Logout</Button></Link> </Navbar.Brand>&nbsp;
 
    
       </Navbar>
@@ -56,4 +56,4 @@ const Nav=()=>{
     )
 }
 
-export default Nav;
+export default Nav2;

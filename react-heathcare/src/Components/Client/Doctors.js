@@ -3,6 +3,10 @@ import axios from 'axios';
 
 import Table from 'react-bootstrap/Table';
 import Container from 'react-bootstrap/Container';
+import { Button } from 'react-bootstrap';
+import Nav2 from './Nav2';
+
+
 
 const Doctors=()=>{
 
@@ -22,8 +26,10 @@ const Doctors=()=>{
 
     return(
         <div>
-            <br></br>
+            
             <Container>
+                <Nav2/> <br></br>
+            <h3>Here All Our Specialized Doctors</h3> <br></br>
             <Table striped bordered hover>
             <thead>
                 <tr>
@@ -32,6 +38,7 @@ const Doctors=()=>{
                     <th>Phone</th>
                     <th>Gender</th>
                     <th>Specialized</th>
+                    <th>Appointment</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,6 +50,8 @@ const Doctors=()=>{
                             <td>{p.doctor_phone}</td>
                             <td>{p.doctor_gender}</td>
                             <td>{p.doctor_specialized}</td>
+                            <td><Button variant="outline-success">Book Appointment</Button></td>
+
                         </tr>
                     ))
                 }
