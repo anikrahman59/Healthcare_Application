@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import axios from 'axios';
 import { BrowserRouter as Router , Route, Routes} from 'react-router-dom';
 import Nav from './Components/Client/Nav';
 import Login from './Components/Client/Login';
-import axios from 'axios';
 import Home from './Components/Client/Home';
 import Doctors from './Components/Client/Doctors';
 
